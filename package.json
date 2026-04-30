@@ -1,0 +1,57 @@
+{
+  "name": "mergewhy",
+  "version": "1.2.0",
+  "description": "MergeWhy CLI — record change evidence, attestations, and compliance data from any CI/CD pipeline",
+  "bin": {
+    "mergewhy": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run build && pnpm run test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "license": "Apache-2.0",
+  "author": "MergeWhy <hello@mergewhy.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mergewhy-dev/mergewhy-cli.git"
+  },
+  "homepage": "https://github.com/mergewhy-dev/mergewhy-cli#readme",
+  "bugs": {
+    "url": "https://github.com/mergewhy-dev/mergewhy-cli/issues"
+  },
+  "keywords": [
+    "compliance",
+    "audit",
+    "evidence",
+    "ci-cd",
+    "devops",
+    "sox",
+    "soc2",
+    "cmmc",
+    "fedramp",
+    "attestation",
+    "change-management",
+    "security",
+    "sbom",
+    "deployment"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
